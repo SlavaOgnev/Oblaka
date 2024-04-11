@@ -13,6 +13,7 @@
 ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/IMAGE%202024-04-11%2015%3A26%3A42.jpg)
 ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/IMAGE%202024-04-11%2015%3A26%3A29.jpg)
 ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/IMAGE%202024-04-11%2015%3A26%3A44.jpg)
+
 4. Установили соединения компьютеров А и Б. Для этого в командной строке компьютера А ввели команду ```ssh ekaterina@192.168.0.102``` . Вводим пароль для компьютера А
 5. С помощью команды``` scp kateg@192.168.0.105:/home/kateg/Desktop/privet.txt /Users/ekaterina/Desktop``` перенесли файл с компьютера Б на компьютер С.
 
