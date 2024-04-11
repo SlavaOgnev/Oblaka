@@ -93,6 +93,7 @@
  1. Возьмем программу написанную на языке python(dvk.py) и сделаем так, чтобы ее вывод происходил в текстовый файл(dvk.txt).
  
  dvk.py:
+ 
  ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.32.24.png)
 
 2. Создадим docker файл, для запуска тестов:
