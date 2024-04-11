@@ -1,0 +1,8 @@
+From python:latest
+
+RUN pip install uuid
+RUN pip install pyfiglet
+
+COPY . .
+
+CMD ["python", "test.py"]

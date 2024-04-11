@@ -1,0 +1,8 @@
+FROM python:3.9
+
+COPY test.py .
+
+RUN pip install uuid\
+	pyfiglet
+
+CMD ["python","test.py"]
