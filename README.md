@@ -82,5 +82,42 @@
 
 ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/IMAGE%202024-04-11%2015%3A27%3A45.jpg)
 
+ # ЛАБОРАТОРНАЯ РАБОТА №3
+ 
+*Задание: сделать, чтобы после пуша в ваш репозиторий автоматически собирался докер образ и результат его сборки сохранялся куда-нибудь. (например, если результат - текстовый файлик, он должен автоматически сохраниться на локальную машину, в ваш репозиторий или на ваш сервер).*
+ 
+ ### ВЫПОЛНЕНИЕ РАБОТЫ:
+
+Создадим отдельный репозиторий, где будет создаваться докер образ [ссылка на репозиторий](https://github.com/SlavaOgnev/lab3)
+ 
+ 1. Возьмем программу написанную на языке python(dvk.py) и сделаем так, чтобы ее вывод происходил в текстовый файл(dvk.txt).
+ 
+ dvk.py:
+ ![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.32.24.png)
+
+2. Создадим docker файл, для запуска тестов:
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.33.05.png)
+
+ 4. Создадим секреты в виде имени и пароля пользователя, чтоб подключиться к dockerhub:
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.33.48.png)
+
+5. Создадим файл docker-build.yml, в котором будут задействованы наши секреты секреты, чтобы войти:
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.34.29.png)
+
+6. Смотрим прошло ли тесты:
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.35.00.png)
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.35.23.png)
+
+6. Проверяем dockeкhub
+
+![](https://github.com/SlavaOgnev/Oblaka/blob/main/screens/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-04-11%20%D0%B2%2015.36.43.png)
+
+
+
 
 
